@@ -1,0 +1,33 @@
+/* Put your CSS here */
+.ember-application {
+    margin: 20px;
+}
+
+body { padding-top: 10px; }
+
+body h2 {
+  font-family: arial;
+  color: #e37f32;
+}
+
+span {
+  font-family: fantasy;
+  margin-right: 40px;
+  font-size: 20px;
+}
+
+a {
+
+  color: #e37f32;
+}
+
+
+
+a:visited {
+  color: #e37f32;
+}
+
+p {
+  font-size: 30px;
+
+}

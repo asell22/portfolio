@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Ember Starter Kit</title>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  </head>
+<body>
+  <script type="text/x-handlebars">
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+
+          <h2>Alex Sell</h2>
+          <span class="link">{{#link-to 'home'}}Home Page{{/link-to}}</span>
+          <span class="link">{{#link-to 'portfolio'}}Portfolio{{/link-to}}</span>
+          <span class="link">{{#link-to 'resume'}}Resume{{/link-to}}</span>
+        </div>
+      </div>
+    </nav>
+    {{outlet}}
+  </script>
+
+  <script type="text/x-handlebars" id="home">
+    <p>
+      Welcome
+    </p>
+  </script>
+
+  <script type="text/x-handlebars" id="portfolio">
+    <p>
+      this is my portfolio
+    </p>
+  </script>
+
+  <script type="text/x-handlebars" id="resume">
+    <p>
+      this is my resume
+    </p>
+  </script>
+
+  <script src="js/libs/jquery-1.10.2.js"></script>
+  <script src="js/libs/ember-template-compiler-1.10.0.js"></script>
+  <script src="js/libs/ember-1.10.0.debug.js"></script>
+  <script src="js/app.js"></script>
+  <!-- to activate the test runner, add the "?test" query string parameter -->
+  <script src="tests/runner.js"></script>
+</body>
+</html>
